@@ -3,7 +3,7 @@
 -- Import SARS data to PostgreSQL
 CREATE TABLE sars (
   Country text,
-  Confirmed_cases text,
+  Confirmed_cases integer,
   Deaths integer,
   Fatality_ratio double precision
 );
@@ -15,9 +15,9 @@ CREATE TABLE corona (
   Province text,
   Country text,
   Last_update date,
-  Confirmed_cases integer,
-  Deaths integer,
-  Recovered integer
+  Confirmed_cases decimal,
+  Deaths decimal,
+  Recovered decimal
 );
 
 
